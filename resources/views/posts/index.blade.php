@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Blog')
+@section('title', 'Vivify Blog')
 
 @section('content')
-    <h1>Posts</h1>
+    <h1>All posts</h1>
     <ul>
         @forelse ($posts as $post)
             <li><a href="{{ route('post', ['post' => $post->id]) }}">{{ $post->title }}</a></li>

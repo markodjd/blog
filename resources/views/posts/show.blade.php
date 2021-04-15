@@ -4,5 +4,4 @@
 @section('content')
     <h1>{{ $post->title }} <small>{{ $post->created_at->diffForHumans() }}</small></h1>
     <p>{{ $post->body }}</p>
-    <a href="{{ route('posts') }}">Go to posts</a>
 @endsection
